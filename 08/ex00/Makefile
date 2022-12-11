@@ -1,8 +1,8 @@
-NAME =	phonebook
+NAME =	easyfind
 
-HEADER = includes/
+HEADER = 
 
-SRCS =	src/main.cpp src/PhoneBook.cpp src/Contact.cpp
+SRCS =	main.cpp
 
 OBJS =	${SRCS:.cpp=.o}
 

@@ -1,8 +1,8 @@
-NAME =	phonebook
+NAME =	span
 
 HEADER = includes/
 
-SRCS =	src/main.cpp src/PhoneBook.cpp src/Contact.cpp
+SRCS =	src/main.cpp src/Span.cpp
 
 OBJS =	${SRCS:.cpp=.o}
 
