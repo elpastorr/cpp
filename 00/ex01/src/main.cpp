@@ -19,7 +19,6 @@ int main()
                 pb.add_contact(i);
             else
             {
-                std::cout << "del, i = " << i << std::endl;
                 pb.del_contact();
                 pb.add_contact(--i);
             }

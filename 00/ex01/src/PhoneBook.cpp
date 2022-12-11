@@ -82,7 +82,10 @@ void    PhoneBook::search(void)
 
     i = 0;
     if (is_null(this->contacts[0]))
+    {
         std::cout << "PhoneBook empty !" << std::endl;
+        return ;
+    }
     else
     {
         std::cout << "|-------------------------------------------|" << std::endl;
