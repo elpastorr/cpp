@@ -18,13 +18,15 @@ std::string newName(std::string original_file)
 
 std::string replace(std::string file, std::string find, std::string replace)
 {
-    int i = 0;
+    int i;
 
-    while (file.find(find) != std::string::npos)
+    i = 0;
+    while (file.find(find, i) != std::string::npos)
     {
-        i = file.find(find);
+        i = file.find(find, i);
         file.erase(i, find.size());
         file.insert(i, replace);
+        i+= replace.size();
     }
     return (file);
 }
