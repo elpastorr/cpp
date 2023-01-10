@@ -23,8 +23,11 @@ Dog::~Dog()
 Dog	&Dog::operator=(const Dog &to_copy)
 {
 	std::cout << "Dog Copy assignment operator called" << std::endl;
-	this->brain = to_copy.brain;
-	this->type = to_copy.type;
+	if (this != &to_copy)
+	{
+		this->type = to_copy.type;
+		*(this->brain) = *(to_copy.brain);
+	}
 	return *this;
 }
 

@@ -26,7 +26,7 @@ WrongAnimal	&WrongAnimal::operator=(const WrongAnimal &to_copy)
 
 void	WrongAnimal::makeSound(void) const
 {
-	std::cout << "Undefined WrongAnimal" << std::endl;
+	std::cout << "WrongAnimal sound" << std::endl;
 }
 
 std::string	WrongAnimal::getType(void) const

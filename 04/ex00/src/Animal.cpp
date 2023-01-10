@@ -26,7 +26,7 @@ Animal	&Animal::operator=(const Animal &to_copy)
 
 void	Animal::makeSound(void) const
 {
-	std::cout << "Undefined Animal" << std::endl;
+	std::cout << "Random Animal sound" << std::endl;
 }
 
 std::string	Animal::getType(void) const

@@ -7,7 +7,7 @@ Brain::Brain()
 
 Brain::Brain(const Brain &to_copy)
 {
-	(void) to_copy;
+	*this = to_copy;
 }
 
 Brain::~Brain()
@@ -17,7 +17,6 @@ Brain::~Brain()
 
 Brain	&Brain::operator=(const Brain &to_copy)
 {
-	(void) to_copy;
+	(void)to_copy;
 	return *this;
 }
-

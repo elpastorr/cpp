@@ -16,5 +16,30 @@ int main()
     delete dog;
     delete cat;
 
+    std::cout << std::endl;
+    const Animal    *(animals[4]);
+    std::cout << std::endl;
+    for (int i = 0; i < 2; i++)
+        animals[i] = new Dog();
+    std::cout << std::endl;
+    for (int i = 2; i < 4; i++)
+        animals[i] = new Cat();
+    for (int i = 0; i < 4; i++)
+    {
+        std::cout << std::endl;
+        animals[i]->makeSound();
+        delete animals[i];
+    }
+    std::cout << std::endl << "Deep copy :" << std::endl;
+	Cat	cat1;
+	Cat	cat2;
+	cat2 = cat1;
+
+	Dog	dog1;
+	Dog	dog2(dog1);
+
+    std::cout << std::endl;
+    //test qui doit crash:
+    // const Animal oui = new Animal();
     return 0;
 }

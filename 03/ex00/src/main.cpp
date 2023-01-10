@@ -13,9 +13,5 @@ int main()
     Joe.attack("Bob");
     Joe.beRepaired(2);
 
-    // ClapTrap    Billy;
-    // Billy = Joe;
-    // ClapTrap    BillyBob(Joe);
-
     return 0;
 }
